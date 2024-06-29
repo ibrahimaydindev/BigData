@@ -1,0 +1,143 @@
+Git Commands
+
+- git config
+This commands is used to set the configuration of the git. It is used to set the user name and email address.
+git config --global user.name "Your Name"
+git config --global user.email "Your Email"
+
+- git init
+This command is used to initialize the git repository in the current directory.
+git init [directory]
+
+- git clone
+This command is used to clone the repository from the remote server.
+git clone [url]
+
+- git add
+This command is used to add the files to the staging area.
+git add [file]
+
+- git commit
+This command is used to commit the changes to the repository.
+git commit -m "Message"
+
+- git status
+This command is used to check the status of the repository.
+git status
+
+- git log
+This command is used to check the log of the repository.
+git log
+
+- git push
+This command is used to push the changes to the remote repository.
+git push
+
+- git pull
+This command is used to pull the changes from the remote repository.
+git pull
+
+- git branch
+This command is used to create, list, delete the branches.
+git branch [branch-name]
+
+- git checkout
+This command is used to switch the branches.
+git checkout [branch-name]
+
+- git merge
+This command is used to merge the branches.
+git merge [branch-name]
+
+- git stash
+This command is used to save the changes temporarily.
+git stash
+
+- git tag
+This command is used to create, list, delete the tags.
+git tag [tag-name]
+
+- git reset
+This command is used to reset the changes.
+git reset [file]
+
+- git revert
+This command is used to revert the changes.
+git revert [commit]
+
+- git fetch
+This command is used to fetch the changes from the remote repository.
+git fetch
+
+- git remote
+This command is used to manage the remote repository.
+git remote [add/remove]
+
+- git rm
+This command is used to remove the files from the repository.
+git rm [file]
+
+- git mv
+This command is used to move the files in the repository.
+git mv [file]
+
+- git diff
+This command is used to check the difference between the files.
+git diff [file]
+
+- git show
+This command is used to show the changes.
+git show [commit]
+
+- git blame
+This command is used to show the changes in the file.
+git blame [file]
+
+- git grep
+This command is used to search the content in the repository.
+git grep [content]
+
+- git bisect
+This command is used to find the commit that introduced the bug.
+git bisect [start/good/bad]
+
+- git reflog
+This command is used to check the history of the repository.
+git reflog
+
+- git cherry-pick
+This command is used to apply the changes from one branch to another.
+git cherry-pick [commit]
+
+- git rebase
+This command is used to rebase the changes.
+git rebase [branch]
+
+- git submodule
+This command is used to manage the submodules.
+git submodule [add/remove]
+
+- git clean
+This command is used to remove the untracked files.
+git clean
+
+
+-git version
+This command is used to check the version of the git.
+git --version
+
+
+* How to add project to remote server
+
+- Create a new repository on GitHub.
+- Open Git Bash.
+- Change the current working directory to your local project.
+- Initialize the local directory as a Git repository.
+- Add the files in your new local repository. This stages them for the first commit.
+- Commit the files that you've staged in your local repository.
+- Copy the https url of your newly created repository.
+- In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+- Push the changes in your local repository to GitHub.
+
+
+
