@@ -3,10 +3,13 @@ package com.ibrahim.bigdata
 import com.ibrahim.bigdata.api.RetrofitClient
 import com.ibrahim.bigdata.models.ExchangeRateResponse
 import com.ibrahim.bigdata.utils.Keys.Companion.EXCHANGE_API_KEY
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import retrofit2.Call
 
 
 fun main() {
+
     val service = RetrofitClient.service
 
     // Örneğin, Euro bazlı döviz kurlarını alalım
@@ -20,6 +23,9 @@ fun main() {
             if (response.isSuccessful) {
                 val exchangeRateResponse = response.body()
                 exchangeRateResponse?.let {
+                    GlobalScope.launch {
+
+                    }
                     println("Base currency: ${it.baseCode}")
                     println("Date: ${it.timeNextUpdateUtc}")
                     println("Rates:")
